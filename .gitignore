@@ -1,0 +1,46 @@
+# ---------- Secrets (NEVER commit) ----------
+.env
+*.env
+!.env.example
+*-key.json
+*service-account*.json
+application_default_credentials.json
+credentials/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---------- Terraform ----------
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+.terraform.lock.hcl.bak
+
+# ---------- dbt ----------
+target/
+dbt_packages/
+logs/
+
+# ---------- Airflow ----------
+airflow/logs/
+airflow/plugins/__pycache__/
+
+# ---------- Local data ----------
+data/
+
+# ---------- Editors / OS ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
