@@ -7,4 +7,10 @@ terraform {
       version = ">= 6.0"
     }
   }
+
+  # Remote state in Cloud Storage (backends cannot use variables)
+  backend "gcs" {
+    bucket = "strom-data-platform-thanuz-tfstate"
+    prefix = "terraform/state"
+  }
 }
