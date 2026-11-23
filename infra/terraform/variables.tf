@@ -10,7 +10,7 @@ variable "region" {
 }
 
 variable "location" {
-  description = "Multi-region location for the bucket and BigQuery datasets (US keeps us in the free tier)"
+  description = "Region for the bucket and BigQuery datasets (us-central1 is free-tier eligible for Cloud Storage)"
   type        = string
-  default     = "US"
+  default     = "us-central1"
 }
